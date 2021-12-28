@@ -1,5 +1,5 @@
-import Container from "../../../components/layout/container";
-import Layout from "../../../components/layout/layout";
+import Container from "@layout/container";
+import Layout from "@layout/layout";
 import Head from "next/head";
 import { CMS_NAME } from "../../../lib/constants";
 
