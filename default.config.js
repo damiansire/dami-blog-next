@@ -1,7 +1,7 @@
 /* Aca agregas los atributos por defecto con la misma clave nombre que tienen en el markdown */
 const defaultConfig = {
   author: {
-    name: "El dami por default",
+    name: "Damian Sire",
     picture: "/assets/blog/authors/damiansire.jpg",
   },
   coverImage: "/assets/blog/preview/cover.jpg",

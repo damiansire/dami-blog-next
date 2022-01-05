@@ -1,0 +1,41 @@
+.measure {
+  font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.siteNav {
+  margin-top: 0.25rem;
+}
+
+.navigationLink {
+  color: #666;
+  font-size: 1rem;
+}
+
+.navigationLink:hover,
+.navigationLink:focus,
+.navigationLink:active {
+  color: #444;
+  opacity: 1;
+  border-bottom: 2px solid #444;
+}
+
+.siteNav a + a {
+  margin-left: 1em;
+}
+
+.siteTitle {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 300;
+  background-image: none;
+}
+
+.siteTitle:hover {
+  opacity: 0.88;
+}
+
+.measure a {
+  text-decoration: none;
+}

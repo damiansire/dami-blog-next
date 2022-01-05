@@ -1,0 +1,16 @@
+.blogPostTag {
+  padding: 0.25rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(239, 68, 68, 1);
+  margin-right: 0.5rem;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+}
+
+.blogPostTag:hover {
+  color: rgba(239, 68, 68, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(239, 68, 68, 1);
+}

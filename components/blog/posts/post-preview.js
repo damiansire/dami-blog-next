@@ -14,9 +14,13 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div class="relative overflow-hidden">
-      <img src={coverImage} alt="Avatar" class="object-cover w-full h-full" />
-      <div class="absolute w-full py-2.5 bottom-0 inset-x-0 bg-blue-400 text-white text-xs text-center leading-4">
+    <div className="relative overflow-hidden">
+      <img
+        src={coverImage}
+        alt="Avatar"
+        className="object-cover w-full h-full"
+      />
+      <div className="absolute w-full py-2.5 bottom-0 inset-x-0 bg-blue-400 text-white text-xs text-center leading-4">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>

@@ -69,3 +69,28 @@ En mi caso, estaba usando tailwind, asi me pareció buena idea, hacer las cosas,
 ## Removiendo tailwind
 
 Nada mejor que un css vanilla...
+
+## Usar o no usar ul para los links del navbar?
+
+https://css-tricks.com/navigation-in-lists-to-be-or-not-to-be/
+https://css-tricks.com/listless-navigation-using-css-to-do-more-with-less/
+https://stackoverflow.com/questions/14911038/nav-role-navigation
+
+Usar un montón de divs o usar <ul> es solo cuestión de apariencia.
+
+Incluso si el uso de un <ul> puede proporcionar algo de contexto, solo debe usarse para diseñar listas desordenadas adecuadas, ya que tenemos herramientas más avanzadas para proporcionar semántica para lectores de pantalla y motores de búsqueda.
+
+Para ayudar a los lectores de pantalla a encontrar los botones de navegación principales, se debe de agregar
+`role = "navigation"`
+en el div externo que contiene los botones de navegación.
+
+Si usas la etiqueta <nav> sera todavia mejor y se hara un SEO aún mejor. Ésta es la práctica recomendada.
+
+Pero no tiene que usar una lista desordenada solo porque tiene que hacerlo.
+
+Usar ul para navegaciones es una práctica común en estos días, pero tiene razón en que la semántica de eso es un poco cuestionable. Básicamente es una "lista de enlaces", pero para los usuarios de tecnología de asistencia, el beneficio real de usar un ul puede ser bastante pequeño. Envolverlo en un navegador o usar atributos ARIA cuando corresponda, hace más en ese sentido.
+
+HTML5
+Algunas de estas conversaciones son anteriores al uso generalizado de HTML5. HTML5 tiene la <nav>etiqueta que creo que pone fin al argumento de la semántica. Si está marcando la navegación, colóquela en una <nav>etiqueta. En lugar de HTML 5, o si simplemente debe utilizar un elemento de envoltura diferente, usted tiene el papel de ARIA: <div role="navigation">.
+
+Actualización: al preguntar, debe usar el rol ARIA en la etiqueta de navegación, aunque está implícito, porque algunos navegadores no lo aplican como deberían. Entonces <nav role="navigation">. ¡Gracias Dave !

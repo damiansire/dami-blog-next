@@ -2,8 +2,9 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Meta from "../meta";
 import Head from "next/head";
+import styles from "./layout.module.css";
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Meta />
@@ -15,7 +16,8 @@ export default function Layout({ preview, children }) {
           rel="stylesheet"
         />
       </Head>
-      <div className="min-h-screen">
+
+      <div className={styles.app}>
         <Navbar />
         <main>{children}</main>
       </div>
